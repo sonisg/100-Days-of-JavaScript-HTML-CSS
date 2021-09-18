@@ -24,17 +24,46 @@ body {
     padding: 30px;
     max-width: 400px;
 }
-.rating img {
-    width: 40px;
-  }
-  .ratings-container {
-    /* display: flex; */
-    margin: 20px 0;
-  }
-  
-  .rating {
-    /* flex: 1; */
-    cursor: pointer;
-    padding: 20px;
-    margin: 10px 5px;
-  }
+.ratings-container
+{
+  display: flex;
+  margin: 20px 0;
+}
+.rating{
+  flex:1;
+  cursor: pointer;
+  padding:10px;
+  margin: 10px 10px;
+}
+.rating img{
+  width: 40px;
+}
+.container strong{
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.rating:hover,
+.rating.active
+{
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(192, 189, 189, 0.3);
+}
+.rating:hover small,
+.rating.active small {
+  color: #111;
+}
+.btn {
+  background-color: #302d2b;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 30px;
+  cursor: pointer;
+ 
+}
+.fa-heart {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
